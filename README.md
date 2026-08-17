@@ -15,34 +15,6 @@ Tahakkuk 2	Göynücek aylık elektrik tüketimi (kWh)	295,223
 
 Dönem: Ocak 2023 - günümüz. Not: Tahsilat ve Tahsilat 1 sayfaları Taşova ilçesini de içerir, ancak bu ilçeye ait tüketim (Tahakkuk) verisi veri setinde bulunmamaktadır — analizler bu kapsam farkı göz önünde bulundurularak yapılmıştır.
 
-Repo Yapısı
-case_study_02/
-├── README.md
-├── data/
-│   └── elektrik_veri_hashed.xlsx
-├── notebooks/
-│   ├── notebook_01_veri_kesfi.ipynb
-│   ├── notebook_02_gorsellestirme.ipynb
-│   └── notebook_03_veri_hikayesi.ipynb
-├── outputs/
-│   └── figures/
-│       ├── ilce_karsilastirma.png
-│       ├── mevsimsel_tuketim.png
-│       ├── mevsimsel_ortalama_bar.png
-│       ├── musteri_sayisi_pasta.png
-│       ├── tahsilat_ilce_sube.png
-│       ├── odeme_zamanlamasi.png
-│       ├── kwh_dagilimi.png
-│       ├── ilce_karsilastirma_mevsimsel.png
-│       ├── ilce_karsilastirma_bar.png
-│       ├── hesap_sinifi_ilce_heatmap.png
-│       ├── musteri_segmentasyonu.png
-│       ├── tahsilat_risk_hesap_sinifi.png
-│       ├── ilce_gec_odeme.png
-│       └── tutar_gec_odeme.png
-└── requirements.txt
-Notebook İçerikleri
-
 notebook_01 — Veri Keşfi ve Tanımlayıcı İstatistik: 5 sayfanın yapısal incelemesi (.info()/.describe()/.head()), ilçe bazlı benzersiz müşteri sayıları, pd.concat ile Tahakkuk sayfalarının birleştirilmesi ve doğrulanması, kwh sütununda eksik/negatif/aşırı uç değer tespiti, hesap sınıfına göre tanımlayıcı istatistik tablosu.
 
 notebook_02 — Veri Görselleştirme: İlçe bazlı hesap sınıfı dağılımları (subplot), aylık ortalama tüketimin mevsimsel trend ve mevsim bazlı bar grafikleri, müşteri sayısı pasta grafiği, Tahsilat sayfası İlçe/Şube dağılımları, ödeme zamanlaması (zamanında/geç/kısmi) oranlarının pasta grafikleri, kwh dağılımının histogram ve box plot ile görselleştirilmesi.
